@@ -18,5 +18,9 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/jobs", jobRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Smart Job Portal API is running.");
+});
+
 // Export the configured Express app
 export default app;
